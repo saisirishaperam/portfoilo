@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>siri's portfoilo</title>
+    <link rel="icon" type="image" sizes="16x16" href="./favcon.jpg">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <style>
+        .hire {
+            background-color:  midnightblue;
+            display: flex;
+            gap: 0px;
+            justify-content: center;
+        }
+        .me {
+            background: rgba(255, 255, 255, 0.285);
+            width: 12%;
+            height: 12%;
+            border-radius: 4%;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 10px;
+            margin-right: 100px;
+            padding: 10px;
+            color: black;
+            box-shadow: -4px -4px  blue;
+        }
+        .con{
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            padding: 4%;
+            margin-top: 10px;
+            background-color:midnightblue;
+        }
+        .sum {
+            max-width: 400px;
+            font-size: 16px;
+            color: white ;
+        }
+        .profile img {
+            width: 34%;
+            height: 3%;
+            border-radius: 50%;
+            margin-left: 500px;
+            box-shadow:  4px 4px 7px 7px blueviolet;
+            display: block;
+        }
+        .profile:hover{
+            transform: scale(1.05);
+        }
+        .edu {
+            background-color: midnightblue;
+            color: white;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .edu2 {
+            background: rgba(255, 255, 255, 0.285);
+            padding: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            box-shadow: 0px 4px rgb(245, 222, 179);
+        }
+        .edu2:hover{
+            transform: scale(1.05);
+        }
+        .skills-grid{
+            background-color:midnightblue;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+        .skill-box{
+            background: rgba(255, 255, 255, 0.285);
+            width: 20%;
+            border-radius: 4%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            padding: 20px;
+            color: white;
+            box-shadow: 0px 4px rgb(245, 222, 179);
+        }
+        .skill-box:hover{
+            transform: scale(1.05);
+        }
+        .pro {
+            background-color:midnightblue;
+            color:white;
+            margin-top: 0%;
+            margin-bottom: 0%;
+            
+        }
+         .side {
+            padding: 1px;
+         }
+        .con2 {
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            gap: 30px;
+            padding: 30px;
+            background-color:midnightblue;
+        }
+        .imgbox img {
+            text-align: center;  
+            height: 3%;  
+            width: 100%;
+            max-width: 250px;
+            box-shadow: 16px 16px rgb(245, 222, 179);
+        } 
+        .imgbox{
+            color: white;
+        }
+        .imgbox:hover{
+            transform: scale(1.05);
+        }
+        .h2 {
+           color: blue ;
+        }
+        h2 {
+            margin-top: 0%;
+            margin-bottom: 0%;
+        }
+        .contact{
+            background-color: midnightblue;
+            color: white;
+            margin-top: 5px;
+            margin-bottom: 0%;
+        }
+        .social-icons{
+            background-color: midnightblue;
+            gap:60px ;
+            padding: 20px;
+            margin-top: 10px;
+        }
+        .hello {
+            display: flex;
+            flex-wrap: wrap;
+            margin-top: 20px;
+            margin-left: 0px;
+            margin-bottom: 20px;
+            justify-content: center;
+            align-items: center;
+        }
+        .social-icons a {
+            background-color: rgba(245, 222, 179, 0.397);
+            width: 40%;
+            font-size: 16px;
+            padding: 20px;
+            border-radius: 5%;
+            color: white;
+            box-shadow: 0px 4px white;
+        }
+        .social-icons a:hover ,.social-icons a.github:hover, .social-icons a.envelope:hover,.social-icons a.phone:hover {
+            color: blue;
+            transform: scale(1.05);
+        }
+        .last {
+            background-color: midnightblue;
+            margin-top: 10px;
+            padding: 10px;
+        }
+        .last a {
+            color:white;
+        }
+        .last a.envelope:hover , .last a.phone:hover{
+            color: blue;
+            transform: scale(1.05);
+        }
+        @media (max-width: 768px) {
+             .edu, .skills-grid, .hello, .con2 {
+                flex-direction: column;
+                align-items: center;
+            }
+    .me, .skill-box, .edu2 {
+        width: 80% !important;
+        margin: 10px 0 !important;
+    }
+    .con {
+        flex-direction: column;
+        padding: 5%;
+        gap: 20px;
+    }
+    .sum {
+        font-size: 16px;
+        padding: 5px;
+    }
+    
+    .imgbox img {
+        width: 90%;
+        height: auto;
+    }
+    .social-icons a {
+        width: 90%;
+        margin: 10px auto;
+    }
+}
+    </style>
+</head>
+<body>
+    <div class="hire">
+        
+        <div class="me"><a href="#hire" style="color: white;">HIRE ME</a></div>
+        <div class="me"><a href="#me" style="color: white;">ABOUT ME</a></div>
+        <div class="me"><a href="#skills" style="color: white;">SKILLS</a></div>
+        <div class="me"><a href="#prop" style="color: white;">PROJECTS</a></div>
+        <div class="me"><a href="#hire" style="color: white;">CONTACT ME</a></div>
+    </div>
+    
+    <div class="con">
+        <div class="sum">
+            <h2 id="me" style="color: rgba(0, 128, 111, 0.977)">Hello, I am Sai Sirisha</h2>
+            <pre><h3>AN aspiring and self-motivated Full Stack Developer with strong problem-solving 
+skills and hands-on experience in HTML, CSS, JavaScript, Python, and database systems. 
+Eager to apply my technical skills and passion for full-stack development in a 
+challenging role to build scalable and user-centric applications.</h3></pre>
+        </div>
+        <div class="profile">
+            <img src="./portimage2.jpg" alt="">
+        </div>
+    </div>
+    <h2 style="color: blue">EDUCATIONAL DETIALS</h2>
+    <div class="edu">
+        <div class="edu2">Bachelor of Technology- Electronics and Communication Engineering 2021-2025</div>
+    </div>
+    <h2 id="skills" style="color: blue">SKILLS</h2>
+    <div>
+    <div class="skills-grid">
+      <div class="skill-box">Python</div>
+      <div class="skill-box">HTML</div>
+      <div class="skill-box">CSS</div>
+      <div class="skill-box">JavaScript</div>
+      <div class="skill-box">React</div>
+      <div class="skill-box">Git</div>
+      <div class="skill-box">Github</div>
+      <div class="skill-box">Vscode</div>
+    </div>
+    <h2 style="color: blue">SOFT SKILLS</h2>
+    <div class="skills-grid">
+        <div class="skill-box"> Problem Solving</div>
+        <div class="skill-box">Analytical Skills</div>
+        <div class="skill-box">Effective Communication</div>
+    </div>
+    <h2 id="prop" style="color: blue">ACADEMIC PROJECTS</h2>
+    <div class="pro">
+        <div class="side">
+       <h4>Name of the Project:AGRICULTURAL WASTE MANAGEMENT</h3>
+       <p>• Developed an IOT-based system to address the harmful practice of burning agricultural 
+waste.  <br>
+• Designed to reduce air and soil pollution and protect unharvested 
+crops. <br>
+• Using Ultrasonic sensor, Arduino Uno, Jumper <wires class="br"></wires></p></div>
+<a href="https://docs.google.com/presentation/d/1bKYYF-KrihntZ7NQjUZcQ5dVTJOHrBGJ/edit?usp=drive_link&ouid=114263737968389706481&rtpof=true&sd=true" style="color: rgb(0, 128, 255);">Do check it out</a>
+    </div>
+    <h2 style="color: blue">AWARDS & ACHIVEMENTS</h2>
+    <div class="con2">
+        <div class="imgbox">
+            <a href="https://drive.google.com/file/d/1Di6fJTpwgsCL3SgkSQ_gNbtMxzICCMVD/view?usp=drive_link"><img src="./robo comp.jpg" alt=""></a>
+            <h4>AQUA SOCCER COMPETION CERTFCATE</h4>
+        </div>
+        <div class="imgbox">
+            <a href="https://drive.google.com/file/d/1Fj56sDSXRNhr6WXDzrFDyuM4a6LMC6X7/view?usp=drive_link"><img src="./certificate of project expo.jpg" alt=""></a>
+            
+            <h4>SECOND PRIZE IN PROJECT EXPO CERTIFICATE</h4>
+        </div>
+        <div class="imgbox">
+            <a href="https://drive.google.com/file/d/1Q6JwSImB2xik1Pvqe0zYLGzhapQG1ppL/view?usp=drive_link"><img src="./hacker.jpg" alt=""></a>
+            <h4>HACKERRANK CERTIFICATION</h4>
+        </div>
+    </div>
+    
+    <div class="social-icons">
+        <div class="contact"><h2 id="hire">Contact Me</h2>
+        <h4>
+If you have any opportunities or suggestions, I am just a click away!</div></h4>
+    <!-- LinkedIn Icon -->
+     <div class="hello">
+    <a href="https://www.linkedin.com/in/sai-sirisha" target="_blank">
+      <i class="fab fa-linkedin"></i>  LinkedIn
+    </a></div>
+    <div class="hello">
+    <!-- GitHub Icon -->
+    <a href="https://github.com/saisirishaperam" class="github" target="_blank">
+      <i class="fab fa-github"></i> github
+    </a></div>
+    <div class="hello">
+    <a href="https://gmail.com/saisirisha862@gmail.com" class="envelope" target="blank">
+        <i class="fas fa-envelope"></i> mail
+    </a></div>
+    <div class="hello">
+    <a href="tel+919347480239" class="phone" target="blank">
+        <i class="fas fa-phone"></i>   phone
+    </a>
+    </div>
+  </div>
+  <div class="last">
+    <div class="hello">
+    <a href="https://gmail.com/saisirisha862@gmail.com" class="envelope" target="blank" >
+        <i class="fas fa-envelope"></i> - saisirisha862@gmail.com
+    </a></div>
+    <div class="hello">
+    <a href="tel+919347480239" class="phone" target="blank">
+        <i class="fas fa-phone"></i>- 9347480239
+    </a></div>
+  </div>
+</body>
+</html>
